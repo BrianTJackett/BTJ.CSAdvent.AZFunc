@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Extensions.Logging;
 using Microsoft.Graph;
 using Microsoft.Identity.Client;
@@ -11,7 +10,7 @@ namespace BTJ.CSAdvent.AZFunc
     public static class GetUserMicrosoftGraph
     {
         private static GraphServiceClient _graphServiceClient;
-        
+
         [FunctionName("GetUserMicrosoftGraph")]
         public static void Run([TimerTrigger("%timerSchedule%")]TimerInfo myTimer, ILogger log)
         {
