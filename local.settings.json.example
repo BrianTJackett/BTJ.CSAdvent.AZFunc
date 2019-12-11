@@ -1,0 +1,12 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "timerSchedule": "0 */5 * * * *",
+    "AzureADAppTenantId": "YOUR_TENANT_ID_HERE",
+    "AzureADAppClientId": "YOUR_CLIENT_ID_HERE",
+    "AzureADAppClientSecret": "YOUR_CLIENT_SECRET_HERE",
+    "AzureADAppRedirectUri": "YOUR_REDIRECT_URI_HERE"
+  }
+}
