@@ -53,7 +53,7 @@ namespace BTJ.CSAdvent.AZFunc
                                               .WithClientSecret(clientSecret)
                                               .Build();
             
-            return new MsalAuthenticationProvider(cca, scopes.ToArray());;
+            return new MsalAuthenticationProvider(cca, scopes.ToArray());
         }
     }
 }
